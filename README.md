@@ -1,6 +1,6 @@
 ### SOMETHING RANDOM
 
-Below are the things that thing package offer you.
+Below are the things that this package offers you.
 
   - GET RANDOM ADVICE
   - GET RANDOM NEKO IMAGE
