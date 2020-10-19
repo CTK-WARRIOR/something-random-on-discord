@@ -1,4 +1,5 @@
 const fetch = require("node-fetch");
+const { get } = require('node-superfetch');
 
 class Random {
   async getMeme() {
@@ -121,5 +122,12 @@ class Random {
 
     return content;
   }
+  
+  async getFact() {
+    const { body } = await get('https://bruhapi.xyz/fact');
+    let content = { embed: { description: body.res, color: 'RANDOM' } };
+    return content;
+  }
+  
 }
 module.exports = Random;
