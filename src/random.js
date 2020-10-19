@@ -121,5 +121,12 @@ class Random {
 
     return content;
   }
+  
+  async getFact() {
+    const main = await fetch('https://bruhapi.xyz/fact').then((res) => res.json());
+    let content = { embed: { description: main.res, color: 'RANDOM' } };
+    return content;
+  }
+  
 }
 module.exports = Random;

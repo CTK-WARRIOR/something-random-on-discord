@@ -9,6 +9,7 @@ Below are the things that this package offers you.
   - GET RANDOM JOKES
   - GET RANDOM STING(BASED ON GIVEN NUMBER)
   - GET RANDOM KPOP SINGER
+  - GET RANDOM FACT
   
   
   
@@ -80,6 +81,12 @@ client.login("TOKEN")
 ```js
 let data = await random.getKpop()
     message.channel.send(data)
+```
+
+**getFact()**: Provides you a random fact.
+```js
+let data = await random.getFact();
+    message.channel.send(data);
 ```
 
 
