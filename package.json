@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/CTK-WARRIOR/dsomething-random-on-discord#readme",
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "node-superfetch": "^0.1.10"
   }
 }
