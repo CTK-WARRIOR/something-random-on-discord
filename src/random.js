@@ -2,7 +2,11 @@ const fetch = require("node-fetch");
 
 class Random {
   async getMeme() {
-    const main = await fetch("https://apis.duncte123.me/meme");
+    const main = await fetch("https://apis.duncte123.me/meme", {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+      }
+    });
     const mat = await main.json();
 
     if (!mat.success) {
@@ -21,7 +25,11 @@ class Random {
   }
 
   async getJoke() {
-    const main = await fetch("https://apis.duncte123.me/joke");
+    const main = await fetch("https://apis.duncte123.me/joke", {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+      }
+    });
     const mat = await main.json();
 
     if (!mat.success) {
@@ -39,8 +47,11 @@ class Random {
 
   async getString(number) {
     const main = await fetch(
-      "https://apis.duncte123.me/random-string/" + number
-    );
+      "https://apis.duncte123.me/random-string/" + number, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+      }
+    });
     const mat = await main.json();
 
     if (!mat.success) {
@@ -51,7 +62,11 @@ class Random {
   }
 
   async getNeko() {
-    const main = await fetch("https://neko-love.xyz/api/v1/neko");
+    const main = await fetch("https://neko-love.xyz/api/v1/neko", {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+      }
+    });
     const mat = await main.json();
 
     if (mat.code !== 200) {
@@ -70,7 +85,11 @@ class Random {
   }
 
   async getKpop() {
-    const main = await fetch("https://apis.duncte123.me/kpop");
+    const main = await fetch("https://apis.duncte123.me/kpop", {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+      }
+    });
     const mat = await main.json();
 
     if (!mat.success) {
@@ -110,7 +129,11 @@ class Random {
   }
 
   async getAdvice() {
-    const main = await fetch("https://api.adviceslip.com/advice");
+    const main = await fetch("https://api.adviceslip.com/advice", {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+      }
+    });
     const mat = await main.json();
 
     if (!mat) {
@@ -123,7 +146,11 @@ class Random {
   }
   
   async getFact() {
-    const main = await fetch('https://bruhapi.xyz/fact').then((res) => res.json());
+    const main = await fetch('https://bruhapi.xyz/fact', {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+      }
+    }).then((res) => res.json());
     let content = { embed: { description: main.res, color: 'RANDOM' } };
     return content;
   }
