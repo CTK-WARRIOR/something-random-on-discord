@@ -7,8 +7,6 @@ Below are the things that this package offers you.
   - GET RANDOM ANIME IMAGE(BASED ON ACTION)
   - GET RANDOM MEME
   - GET RANDOM JOKES
-  - GET RANDOM STING(BASED ON GIVEN NUMBER)
-  - GET RANDOM KPOP SINGER
   - GET RANDOM FACT
   
   
@@ -17,8 +15,7 @@ Below are the things that this package offers you.
 ```js
 const discord = require("discord.js")
 const client = new discord.Client()
-const { Random } = require("something-random-on-discord")
-const random = new Random();
+const random = require("something-random-on-discord").Random
 
 
 client.on("ready", () => {
@@ -53,12 +50,6 @@ client.login("TOKEN")
     message.channel.send(data)
 ```
 
-**getString(number)**: Provieds You a random string, length will be based on the number you gave.
-```js
- let data = await random.getString(6)
-    message.channel.send(data)
-```
-
 **getNeko()**: Provieds You a random neko image.
 ```js
  let data = await random.getNeko()
@@ -69,17 +60,19 @@ client.login("TOKEN")
 ```js
  let data = await random.getJoke()
     message.channel.send(data)
+
+ //To get custom name joke, follow below code
+
+ let data = await random.getJoke({name:{
+   first: "ctk",
+   last: "warrior"
+ }})
+    message.channel.send(data)
 ```
 
 **getAnimeImgURL(type)**: Provied you a random image url of anime(based on action), availabe actions are "pat", "hug", "waifu", "cry", "kiss", "slap", "smug", "punch"
 ```js
  let data = await random.getAnimeImgURL("cry")
-    message.channel.send(data)
-```
-
-**getKpop()**: Provide you a Random Kpop singer image and name.
-```js
-let data = await random.getKpop()
     message.channel.send(data)
 ```
 
