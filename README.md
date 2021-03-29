@@ -7,6 +7,7 @@ Below are the things that this package offers you.
   - GET RANDOM ANIME IMAGE(BASED ON ACTION)
   - GET RANDOM MEME
   - GET RANDOM JOKES
+  - GET JOKE BASED ON NAME
   - GET RANDOM FACT
   
   
@@ -56,17 +57,15 @@ client.login("TOKEN")
     message.channel.send(data)
 ```
 
-**getJoke()**: Provieds You a Random Funny Joke.
+**getRandomJoke()**: Provieds You a Random Funny Joke.
 ```js
- let data = await random.getJoke()
+ let data = await random.getRandomJoke()
     message.channel.send(data)
+```
 
- //To get custom name joke, follow below code
-
- let data = await random.getJoke({name:{
-   first: "ctk",
-   last: "warrior"
- }})
+**getNameJoke()**: Provieds You a Random Funny Joke related to your name.
+```js
+ let data = await random.getNameJoke("ctk", "warrior")
     message.channel.send(data)
 ```
 
