@@ -1,5 +1,11 @@
 ### SOMETHING RANDOM
 
+
+## NOTICE
+You can not use v2.0.0 because i made a big mistake, now i will continue with version v3.0.0
+
+___
+
 Below are the things that this package offers you.
 
   - GET RANDOM ADVICE
