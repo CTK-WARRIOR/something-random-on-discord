@@ -3,9 +3,7 @@ const userAgents = require("../../tools/user-agents.json")
 
 const getJoke = async (options) => {
   if (!options) options = {}
-
   let embed;
-
   if (options.name) {
     let json = await axios(`http://api.icndb.com/jokes/random?firstName=${options.name.first}&lastName=${options.name.last}`, {
       headers: {

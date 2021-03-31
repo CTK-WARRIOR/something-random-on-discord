@@ -87,8 +87,27 @@ let data = await random.getFact();
     message.channel.send(data);
 ```
 
+____
+
+## ServerAssistant
+
+```js
+const srod = require("something-random-on-discord").ServerAssistant```
+```
+
+**isHoisted()**: Checks if the given name is hoisted or not.
+
+```js
+srod.isHoisted("! Mattechi276") //returns true
+```
+
+**isURL()**: Checks wheather given link is url or not.
+```js
+srod.isURL("https://withwin.in") //returns true
+```
 
 
+____
 
 # FEEL FREE TO JOIN OUR SERVER
 

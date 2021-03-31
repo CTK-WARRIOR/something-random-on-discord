@@ -2,6 +2,9 @@ const axios = require("axios")
 const userAgents = require("../../tools/user-agents.json")
 
 const getAnimeImgURL = async (action) => {
+
+  if(!action) throw "action is not given in getAnimeImgURL()"
+
   let array = ["pat", "hug", "waifu", "cry", "kiss", "slap", "smug", "punch"];
 
   if (!array.find(x => x === action.toLowerCase())) {

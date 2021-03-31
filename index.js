@@ -6,5 +6,9 @@ module.exports = {
     getAdvice: require("./src/Random/getAdvice.js"),
     getFact: require("./src/Random/getFact.js"),
     getAnimeImgURL: require("./src/Random/getAnimeImgURL.js")
+  },
+  ServerAssistant: {
+    isHoisted: require("./src/ServerAssistant/isHoisted.js"),
+    isURL: require("./src/ServerAssistant/isURL.js")
   }
 }
