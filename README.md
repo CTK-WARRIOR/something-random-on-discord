@@ -1,22 +1,13 @@
-### SOMETHING RANDOM
+# SOMETHING RANDOM
 
 
-## NOTICE
+## ⚠ NOTICE 
 You can not use v2.0.0 because i made a big mistake, now i will continue with version v3.0.0
 
+### ✨ UPDATES 
+`[ API Issue ]`: Changed the API to reddit API
 ___
-
-Below are the things that this package offers you.
-
-  - GET RANDOM ADVICE
-  - GET RANDOM NEKO IMAGE
-  - GET RANDOM ANIME IMAGE(BASED ON ACTION)
-  - GET RANDOM MEME
-  - GET RANDOM JOKES
-  - GET JOKE BASED ON NAME
-  - GET RANDOM FACT
-  
-  
+    
   
 # SETUP
 ```js
@@ -92,7 +83,7 @@ ____
 ## ServerAssistant
 
 ```js
-const srod = require("something-random-on-discord").ServerAssistant```
+const srod = require("something-random-on-discord").ServerAssistant
 ```
 
 **isHoisted()**: Checks if the given name is hoisted or not.
@@ -109,6 +100,7 @@ srod.isURL("https://withwin.in") //returns true
 
 ____
 
-# FEEL FREE TO JOIN OUR SERVER
+
+## FEEL FREE TO JOIN OUR SERVER
 
 CTK'S SERVER => [JOIN OR DIE](https://withwin.in/dbd)

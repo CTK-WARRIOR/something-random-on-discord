@@ -3,24 +3,26 @@ const userAgents = require("../../tools/user-agents.json")
 
 async function getMeme() {
 
-  let json = await axios("https://apis.duncte123.me/meme", {
+  let tag = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"]
+  tag = tag[Math.floor(Math.random() * tag.length)]
+
+  let json = await axios(`https://www.reddit.com/r/${tag}/random/.json`, {
     headers: {
       "User-Agent": userAgents[Math.floor(Math.random() * userAgents.length)]
     }
   });
 
   json = json.data;
-
-  if (!json.success) throw "Error 01: Unable to access the json content of API"
-
+  if (!json) throw new "Error 01: Unable to access the json content of API"
+  json = json[0].data.children[0].data;
 
   let content = {
     embed: {
       color: "RANDOM",
-      title: json.data.title,
-      image: { url: json.data.image }
+      image: { url: json.is_video ? "https://freepikpsd.com/wp-content/uploads/2019/10/no-image-png-5-Transparent-Images.png" : json.url },
+      title: json.title
     }
-  };
+  }
 
   return content;
 }
