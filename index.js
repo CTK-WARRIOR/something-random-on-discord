@@ -5,7 +5,8 @@ module.exports = {
     getNeko: require("./src/Random/getNeko.js"),
     getAdvice: require("./src/Random/getAdvice.js"),
     getFact: require("./src/Random/getFact.js"),
-    getAnimeImgURL: require("./src/Random/getAnimeImgURL.js")
+    getAnimeImgURL: require("./src/Random/getAnimeImgURL.js"),
+    getNPM: require("./src/Random/getNPM.js")
   },
   ServerAssistant: {
     isHoisted: require("./src/ServerAssistant/isHoisted.js"),

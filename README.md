@@ -78,6 +78,12 @@ let data = await random.getFact();
     message.channel.send(data);
 ```
 
+**getNPM()**: it provides the information of given package.
+```js
+let data = await random.getNPM("discord.js");
+    message.channel.send(data);
+```
+
 ____
 
 ## ServerAssistant
