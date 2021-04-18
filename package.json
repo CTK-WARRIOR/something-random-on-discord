@@ -1,6 +1,6 @@
 {
   "name": "something-random-on-discord",
-  "version": "3.3.2",
+  "version": "3.4.2",
   "description": "A very easy to use package which gives you random things.",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,8 @@
     "advice",
     "meme",
     "neko",
-    "fact"
+    "fact",
+    "profanity"
   ],
   "author": "ctk",
   "license": "MIT",

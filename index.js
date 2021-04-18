@@ -10,6 +10,7 @@ module.exports = {
   },
   ServerAssistant: {
     isHoisted: require("./src/ServerAssistant/isHoisted.js"),
-    isURL: require("./src/ServerAssistant/isURL.js")
+    isURL: require("./src/ServerAssistant/isURL.js"),
+    checkProfanity: require("./src/ServerAssistant/checkProfanity.js")
   }
 }

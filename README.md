@@ -104,6 +104,13 @@ srod.isURL("https://withwin.in") //returns true
 ```
 
 
+[ New ] `checkProfanity(string)`: Check wheather if string contains any bad word
+```js
+srod.checkProfanity("fuck you lmao").then(string => {
+ //returns  { profanity: true }
+})
+```
+
 ____
 
 
