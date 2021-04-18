@@ -4,7 +4,7 @@ const userAgents = require("../../tools/user-agents.json")
 const checkProfanity = async (string) => {
   if(!string) return { profanity: false };
 
-    let json = await axios("https://www.purgomalum.com/service/json?text=" + string, {
+    let json = await axios("https://www.purgomalum.com/service/json?text=" + encodeURI(string), {
     headers: {
       "User-Agent": userAgents[Math.floor(Math.random() * userAgents.length)]
     }
