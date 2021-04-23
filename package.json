@@ -1,6 +1,6 @@
 {
   "name": "something-random-on-discord",
-  "version": "3.4.3",
+  "version": "3.4.4",
   "description": "A very easy to use package which gives you random things.",
   "main": "index.js",
   "scripts": {
